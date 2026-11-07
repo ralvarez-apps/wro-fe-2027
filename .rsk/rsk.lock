@@ -1,0 +1,66 @@
+version = 1
+
+[[skills]]
+  name = "rsk-guide"
+  version = "0.5.1"
+  source = "registry"
+
+[[skills]]
+  name = "docs-architect"
+  version = "1.2.0"
+  source = "registry"
+
+[[skills]]
+  name = "token-economy"
+  version = "1.1.0"
+  source = "registry"
+
+[[skills]]
+  name = "frontend-design"
+  version = ""
+  source = "official"
+
+[[skills]]
+  name = "ui-ux-architect"
+  version = "1.1.0"
+  source = "registry"
+
+[[skills]]
+  name = "mockup-architect"
+  version = "1.0.0"
+  source = "registry"
+
+[[skills]]
+  name = "feature-planner"
+  version = "1.1.0"
+  source = "registry"
+
+[[skills]]
+  name = "grill-with-docs"
+  version = "1.1.0"
+  source = "registry"
+
+[[skills]]
+  name = "design-patterns"
+  version = "1.1.0"
+  source = "registry"
+
+[[skills]]
+  name = "performance-reviewer"
+  version = "1.1.0"
+  source = "registry"
+
+[[skills]]
+  name = "webapp-testing"
+  version = ""
+  source = "official"
+
+[[skills]]
+  name = "pdf"
+  version = ""
+  source = "official"
+
+[[skills]]
+  name = "tdd"
+  version = "1.1.0"
+  source = "registry"
