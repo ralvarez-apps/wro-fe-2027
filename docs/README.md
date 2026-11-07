@@ -9,7 +9,7 @@ frontmatter `status` tell you the state.
 | backlog/ | Queue layout: `inbox.md`, `wro-fe-2027.md` (Doing/Next/Later/Someday), `done/` per month |
 | ideas/ plans/ designs/ | The path from thought to build |
 | reviews/ changes/ | Dated records; never rewritten |
-| guides/ methodology/ | Living procedures and working rules |
+| guides/ methodology/ | Living procedures and working rules. Rules digests (cited, PDF page per fact): [field](guides/rules-field.md), [senior missions](guides/rules-senior-missions.md), [advanced missions](guides/rules-advanced-missions.md), [general](guides/rules-general.md) |
 | templates/ archive/ | Doc templates; finished or obsolete docs |
 
 Folders are created lazily, when the first doc exists.
