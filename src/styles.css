@@ -1,0 +1,37 @@
+:root { color-scheme: dark; --bg:#0f141a; --panel:#161d26; --line:#263241; --text:#e6edf3; --dim:#8b9bb0; --accent:#2f6fed; --warn:#ff8a00; --bad:#e5484d; --good:#2fbf71; font-family: system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); }
+.app { display:grid; grid-template-columns:260px 1fr 340px; grid-template-rows:auto 1fr; height:100vh; }
+header { grid-column:1/-1; display:flex; gap:16px; align-items:baseline; padding:8px 16px; border-bottom:1px solid var(--line); background:var(--panel); }
+h1 { font-size:16px; margin:0; } .sub { color:var(--dim); font-size:13px; }
+.panel { background:var(--panel); padding:12px; overflow:auto; font-size:13px; }
+.panel.left { border-right:1px solid var(--line); } .panel.right { border-left:1px solid var(--line); }
+h2 { margin:0 0 8px; font-size:14px; } h3 { margin:14px 0 6px; font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--dim); }
+main { position:relative; min-width:0; min-height:0; }
+main canvas { display:block; }
+.row { display:flex; gap:6px; flex-wrap:wrap; margin:4px 0; align-items:center; }
+.rowlabel { color:var(--dim); width:44px; }
+button, select { background:#1d2733; color:var(--text); border:1px solid var(--line); border-radius:6px; padding:5px 9px; font:inherit; cursor:pointer; }
+button:hover { border-color:var(--accent); } button.on { background:var(--accent); border-color:var(--accent); } button.primary { background:#25405f; width:100%; margin:6px 0; }
+.timeline button.primary { width:auto; margin:0; }
+button:focus-visible, select:focus-visible, input:focus-visible { outline:2px solid #8fb4ff; outline-offset:1px; }
+.grid9 { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; width:150px; } .grid9 button { padding:8px 0; }
+.field { display:flex; flex-direction:column; gap:4px; margin:6px 0; } .field.inline { flex-direction:row; align-items:center; justify-content:space-between; } .field select { min-width:110px; }
+.check { display:block; margin:3px 0; } .hint { color:var(--dim); font-size:12px; margin:4px 0; } .warn { color:var(--warn); font-size:12px; }
+.timeline { position:absolute; left:12px; right:12px; bottom:12px; display:flex; gap:10px; align-items:center; background:#161d26e6; border:1px solid var(--line); border-radius:10px; padding:8px 12px; }
+.timeline input[type=range] { flex:1; } .clock { font-variant-numeric:tabular-nums; min-width:110px; text-align:right; }
+.bar { height:8px; background:#1d2733; border-radius:4px; overflow:hidden; } .fill { height:100%; background:var(--good); } .fill.over { background:var(--bad); }
+.big { font-size:22px; color:var(--text); }
+.events, .notes { padding-left:16px; margin:6px 0; } .events li { margin:3px 0; }
+.steps { list-style:none; margin:0; padding:0; } .steps li button { width:100%; text-align:left; background:none; border:0; border-radius:4px; padding:4px 6px; display:flex; gap:6px; }
+.steps li.active button { background:#25405f; } .steps li.past button { color:var(--dim); } .steps .time { margin-left:auto; color:var(--dim); }
+.kind { text-transform:uppercase; font-size:10px; color:var(--accent); min-width:38px; } .detail { margin:2px 6px 8px 50px; color:var(--dim); }
+table { width:100%; border-collapse:collapse; } td { padding:4px 4px; border-bottom:1px solid var(--line); vertical-align:top; }
+.chip { display:inline-block; font-size:10px; padding:1px 6px; border-radius:9px; background:#223; color:#b8c7ff; white-space:nowrap; }
+.chip-derived { background:#2a3a22; color:#b9e08a; } .chip-figure { background:#223a3a; color:#8be0e0; } .chip-assumed { background:#4a2f12; color:#ffb866; }
+.alert { padding:24px; color:var(--bad); }
+.tag { font-size:12px; padding:1px 6px; border-radius:4px; background:#000a; color:#fff; white-space:nowrap; pointer-events:none; user-select:none; }
+.tag-station { background:#f2c500; color:#111; } .tag-card { background:#2f6fed; } .tag-dim { background:#0006; color:#ccc; }
+.tag-zone { background:#2a6df4cc; } .tag-rack { background:#fff; color:#111; font-weight:700; } .tag-aisle { background:#116b3acc; }
+.tag-blocked { background:#c0272dcc; } .tag-limit { background:#ff8a00; color:#111; }
+@media (max-width: 1100px) { .app { grid-template-columns:1fr; grid-template-rows:auto auto 60vh auto; height:auto; } }
