@@ -4,15 +4,22 @@ Working repo for the WRO 2027 Future Engineers challenge. Source of truth is the
 
 ## Commands
 
-- Build: TBD (app not scaffolded yet)
-- Test: TBD
-- Lint: TBD
+- Dev: `pnpm dev` (Vite, http://localhost:5173)
+- Build: `pnpm build` (typecheck + static bundle in `dist/`)
+- Test: `pnpm test` (vitest, rules and planner logic)
+- Lint: `pnpm lint` (tsc strict; no eslint yet)
+- Screenshot smoke: `pnpm build && pnpm preview --port 4173`, then `CHROMIUM_PATH=<chrome> node scripts/screenshot.mjs`
 
 ## Layout
 
 - `WRO-2027-Future-Engineers-Game-Rules.pdf`: game rules (13 MB, read by page range, never whole).
 - `WRO-2027-Future-Engineers-General-Rules.pdf`: general rules.
-- `docs/`: to be scaffolded with the `docs-architect` skill (rules digest, ADRs, plans).
+- `docs/`: docs-architect tree; `docs/guides/rules-*.md` are the cited rules digests, `docs/adr/` decisions, `docs/backlog/` queue.
+- `src/rules/`: field geometry, limits, scoring as typed data, each with a PDF-page `Cite` (kinds: text, figure, derived, assumed).
+- `src/scenarios/`: declarative `ScenarioSetup` → `buildPlan` (waypoint graph + Dijkstra) → `stateAt(plan, t)`. Pure TS, no React/Three.
+- `src/scene/`: react-three-fiber rendering only; reads `live.current` per frame.
+- `src/ui/`, `src/state/`: panels and the zustand store.
+- `tests/`: vitest for rules and planner.
 - `.claude/skills/`, `.rsk/`: managed by `rsk`; do not edit by hand.
 
 ## Conventions
@@ -20,6 +27,8 @@ Working repo for the WRO 2027 Future Engineers challenge. Source of truth is the
 - Every rule, dimension or scoring value shown in the app cites its PDF and page. Extract once into a rules digest under `docs/`, then work from the digest, not the PDFs.
 - Scenarios are data (declarative config), rendered by the Three.js scene; the rules logic stays separate from rendering so it can be unit tested.
 - Units are explicit (mm/cm/s) in names or types.
+- Coordinates: mm, origin at the Workbench-wall/left-wall corner, x across the width, z toward the open front, y up. Scene recentres via `toScene`.
+- Anything the rulebook does not dimension uses an `assumed` cite and shows up in the UI as such; never present it as a rule.
 
 ## Boundaries
 

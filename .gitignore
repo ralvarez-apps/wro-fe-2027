@@ -2,3 +2,5 @@
 .claude/skills/
 # local extraction cache
 .cache/
+node_modules/
+dist/
