@@ -1,5 +1,5 @@
 ---
-status: draft
+status: active
 project: wro-fe-2027
 date: 2026-11-07
 related: [backlog/wro-fe-2027.md, adr/0001-app-stack-vite-react-r3f.md]
@@ -22,6 +22,7 @@ Decided 2026-11-07: study/teaching tool; Senior and Advanced in v1; static site,
 6. Verification — unit tests for rules logic, Playwright screenshots of the scene.
 
 ## Exit criteria
+- [x] v1 built: all four missions playable; rules logic tested separately from rendering.
 - [ ] Each rule or value shown in the app has a PDF page citation.
 - [ ] Every scenario in the rulebooks is playable.
 - [ ] Rules logic is tested separately from rendering.
