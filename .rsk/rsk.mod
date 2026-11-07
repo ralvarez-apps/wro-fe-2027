@@ -1,6 +1,6 @@
 version = 1
 tools = ["claude-code"]
-pinned = ["rsk-guide", "docs-architect", "token-economy", "frontend-design", "ui-ux-architect", "mockup-architect", "feature-planner", "grill-with-docs", "design-patterns", "performance-reviewer", "webapp-testing", "pdf", "tdd"]
+pinned = ["rsk-guide", "docs-architect", "token-economy", "frontend-design", "ui-ux-architect", "mockup-architect", "feature-planner", "grill-with-docs", "design-patterns", "performance-reviewer", "webapp-testing", "pdf", "tdd", "react-architect"]
 
 [skills]
   design-patterns = "*"
@@ -11,6 +11,7 @@ pinned = ["rsk-guide", "docs-architect", "token-economy", "frontend-design", "ui
   mockup-architect = "*"
   pdf = "*"
   performance-reviewer = "*"
+  react-architect = "*"
   rsk-guide = "*"
   tdd = "*"
   token-economy = "*"

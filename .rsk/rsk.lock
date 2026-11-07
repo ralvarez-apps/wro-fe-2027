@@ -64,3 +64,8 @@ version = 1
   name = "tdd"
   version = "1.1.0"
   source = "registry"
+
+[[skills]]
+  name = "react-architect"
+  version = "1.2.0"
+  source = "registry"
