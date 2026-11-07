@@ -9,7 +9,8 @@ aisle widths, and the score as it accrues. Click any object to see the rule behi
 pnpm install
 pnpm dev      # http://localhost:5173
 pnpm test
-pnpm build    # static site in dist/
+pnpm build    # static site in dist/fe/2027/
+pnpm deploy   # Cloudflare Workers static assets, see .env.example
 ```
 
 Rules come from the two PDFs in this repo, digested with page citations in `docs/guides/`. Values the PDFs do not

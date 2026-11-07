@@ -1,0 +1,9 @@
+// Cloudflare Workers static assets: no Worker code, `dist/` is served as it is.
+// `dist/fe/2027/` holds the app, so the Worker answers under /fe/2027/ (see vite.config.ts).
+// The hostname and route are NOT here: SITE_HOST and SITE_PATH come from .env (see scripts/deploy.mjs).
+// `dist/_headers` is applied by the platform. Static requests are free.
+{
+  "name": "wro-fe-2027",
+  "compatibility_date": "2026-11-06",
+  "assets": { "directory": "./dist" },
+}

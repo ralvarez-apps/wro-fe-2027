@@ -1,0 +1,8 @@
+/fe/2027/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Hashed by Vite, safe to cache for a year.
+/fe/2027/assets/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -8,6 +8,7 @@ Working repo for the WRO 2027 Future Engineers challenge. Source of truth is the
 - Build: `pnpm build` (typecheck + static bundle in `dist/`)
 - Test: `pnpm test` (vitest, rules and planner logic)
 - Lint: `pnpm lint` (tsc strict; no eslint yet)
+- Deploy: `pnpm deploy` (build, then Cloudflare Worker static assets at `$SITE_HOST$SITE_PATH`; config in `.env`, see `.env.example`). `pnpm deploy:dry` checks the config only.
 - Screenshot smoke: `pnpm build && pnpm preview --port 4173`, then `CHROMIUM_PATH=<chrome> node scripts/screenshot.mjs`
 
 ## Layout
@@ -20,6 +21,7 @@ Working repo for the WRO 2027 Future Engineers challenge. Source of truth is the
 - `src/scene/`: react-three-fiber rendering only; reads `live.current` per frame.
 - `src/ui/`, `src/state/`: panels and the zustand store.
 - `tests/`: vitest for rules and planner.
+- `wrangler.jsonc`, `scripts/deploy.mjs`, `deploy/_headers`: static-assets Worker; the build is emitted to `dist/fe/2027/` because assets are matched by full path.
 - `.claude/skills/`, `.rsk/`: managed by `rsk`; do not edit by hand.
 
 ## Conventions
@@ -33,5 +35,5 @@ Working repo for the WRO 2027 Future Engineers challenge. Source of truth is the
 ## Boundaries
 
 - Always: use `token-economy`; read PDFs by page range or extract text to a file first.
-- Ask first: adding dependencies, choosing the app stack, installing more skills.
+- Ask first: deploying to production, adding dependencies, choosing the app stack, installing more skills.
 - Never: guess a rule value that is not in the PDFs; mark it as an open question instead.
