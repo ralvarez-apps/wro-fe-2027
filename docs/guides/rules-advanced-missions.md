@@ -199,17 +199,19 @@ Mission 2: same 4 aisle/station combos (p.27) crossed with random product layout
 | cones_total | 4 (2 per blocked aisle) | 4 | p.22, p.27 |
 | box_row_gap | - | 80 mm between boxes, 10 mm front/rear clearance | p.25 |
 | field | 2362 mm x 2286 mm, walls 100 mm | same | p.30, p.31 |
-| time_limit | not stated in pp.21-32 | not stated | - |
+| time_limit | 3 min per official run (General Rules p.18) | same | - |
+
+## Figure notes (read from images)
+
+- Aisle numbering (Fig 19, p.21): four aisles run parallel to the Rack rows, numbered 1 to 4 from left to right as seen with the Workbench at the top; Aisle 1 lies between the left wall and row 1-3 (Charging Station A side), Aisle 2 between rows 1-3 and 4-6, Aisle 3 between rows 4-6 and 7-9, Aisle 4 between row 7-9 and the right wall (Charging Station C side). Each is drawn as a dashed double-headed arrow along the aisle. Widths per rules-field.md (563/400/400/563 mm).
+- Blocked aisle example (Fig 21, p.22): Aisle 3 selected, so Aisle 1 also blocked; two cones in each blocked aisle, one near the Workbench end and one near the open front end of the aisle, standing on the dashed orange corner-bracket squares printed on the mat (4 cones total).
+- Rack numbering orientation (Fig 25, p.27, with Fig 14 p.15): rows are labelled Rectangular block (units 1-3, left, nearest Charging Station A), Cylinder (units 4-6, middle), Pyramid (units 7-9, right); unit numbers run from the Workbench end to the front end of each row.
+- Fig 25 example (p.27): cones in the left aisle (Aisle 1) and the aisle between the middle and right rows (Aisle 3), two each; four product boxes in a row on the Workbench; green boxes on the middle levels of the racks. M2 cone squares are the same printed squares as in M1; the text only says the same procedures apply (p.27).
+- Scoring counts confirmed from the tables (p.24, p.29): M1 four unrequested boxes at 1 pt each (max 4); M2 four requested boxes at 15 / 10 / 5 pts each (60 / 40 / 20); M2 three empty rack boxes at 3 pts (max 9).
+- Time limit: 3 min per official run, Secret Mission attempts included (General Rules p.18; rules-general.md).
+- Standard box placement (Section 2.7.1, p.11-12), Charging Station start/finish rules (Section 2.8, p.12-13) and Workbench/Storage Zone (Sections 2.9-2.10, p.13-14) are defined in the field section; see rules-field.md. Box placement scoring conditions (Section 3.1.3, p.16-17) are in rules-senior-missions.md. Order list randomization (Section 3.2.1, p.17-19) is in rules-senior-missions.md.
 
 ## Open questions
 
-- Time limit per round is not stated on pp.21-32; check Section 2.x / general rules.
-- Figure 19 (aisle numbering), Figure 21 and Figure 25 layouts were not read as images; the geometry of Aisles 1-4 and the dashed squares, and the Rack unit numbering orientation (p.21, p.22, p.27), need a figure check.
-- Order list randomization (five requested Rack units, Order List Areas) is defined in Section 3.2.1, outside the scope pp.21-32.
-- Section 2.8 (start position requirements), 2.7.1 (standard box placement) and 3.1.3 (box placement scoring) are referenced, not defined, in this range (p.23, p.26, p.24).
-- Workbench Zone and Storage Zone definitions and positions are not given in pp.21-32.
-- Surprise Rule content is not described on pp.21-32 (p.24, p.29).
-- M1 "Requested box removed from a Rack": 5 boxes x 3 = 15; "unrequested box" max 4 implies 4 unrequested boxes (inferred from the table totals, p.24).
-- M2 lists "Requested Box Delivery" totals of 60 / 40 / 20, i.e. 4 boxes; per-box points are 15 / 10 / 5 (p.29).
-- Whether the robot can rely on knowing the Rack-box position ordering of M2's example (Rack units 2, 6, 7) is figure-only (p.26).
-- Whether the same aisle pair rule (Section 4.1.1) allows the cone squares to differ in M2 is not stated; the text only says the same procedures apply (p.27).
+- Surprise Rule content is not defined in the Game Rules PDF (only 50 pts, p.24, p.29); announced by organisers per General Rules p.14-15.
+- Whether the robot may rely on knowing the Rack-box position ordering of M2's example (Rack units 2, 6, 7) is a rules-interpretation question; the figure only shows the example (p.26-27).

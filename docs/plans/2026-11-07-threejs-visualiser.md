@@ -2,7 +2,7 @@
 status: draft
 project: wro-fe-2027
 date: 2026-11-07
-related: [backlog/wro-fe-2027.md]
+related: [backlog/wro-fe-2027.md, adr/0001-app-stack-vite-react-r3f.md]
 ---
 
 # Three.js visualiser for WRO 2027 Future Engineers
@@ -10,6 +10,8 @@ related: [backlog/wro-fe-2027.md]
 ## Scope
 In: a Three.js app that shows the field, objects and constraints from the two rulebook PDFs, and animates what the robot should do per scenario, with rule limits made visible. Every value cites PDF + page.
 Out: robot firmware, hardware design.
+
+Decided 2026-11-07: study/teaching tool; Senior and Advanced in v1; static site, no backend; stack per [ADR 0001](../adr/0001-app-stack-vite-react-r3f.md).
 
 ## Phases
 1. Rules digest — extract both PDFs to text, write a cited digest under `docs/` (field, objects, scoring, limits, scenarios, open questions).

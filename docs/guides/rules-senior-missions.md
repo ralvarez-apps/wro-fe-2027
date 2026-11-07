@@ -18,6 +18,9 @@ Source: WRO 2027 Future Engineers Game Rules, pp.15-20. Page cites in `(p.N)`.
 - Nine dot cards from Mission 2 may be used for the randomization (p.15).
 - Remaining four Rack units and the Workbench are empty (p.15).
 - Rack numbering is Figure 14 (p.15). Example selection: Racks 2, 3, 4, 7, 9 (p.15).
+- Fig 14 layout: 3 Rack rows x 3 units. Row A = 1-2-3, row B = 4-5-6, row C = 7-8-9; numbers run along each row from the Workbench end (1, 4, 7) to the open front end (3, 6, 9); row 1-3 is nearest Charging Station A (left), row 7-9 nearest the hazard-striped right wall (p.15, fig; reading from the isometric view, the Workbench end is where the FUTURE ENGINEERS logo is). Same orientation holds in Advanced Fig 25 (rows labelled Rectangular block / Cylinder / Pyramid, p.27).
+- Example boxes sit on the middle of the three levels of Racks 2, 3, 4, 7, 9 (fig, p.15); the middle level is level 2 (top surface 225 mm above floor, see rules-field.md).
+- Time limit per official run: 3 minutes, Secret Mission attempts included (General Rules p.18; see rules-general.md).
 - Same randomized setup for all teams in the same round; judges verify box Rack and orientation before each run (p.15).
 - Possible configurations: any 5-subset of Racks 1-9 (the 5-of-9 selection, p.15). Count 126 = C(9,5) is derived, not stated.
 
@@ -149,11 +152,7 @@ Common: start at either Charging Station (p.15, p.19); finish at either Charging
 | orderListAreas | n/a | 6 (1-5 used, 6 empty) | p.18 |
 
 ## Open questions
-- Rack grid layout is figure-only (Figure 14, p.15). It appears as 3 rows x 3 (1-3, 4-6, 7-9) but exact dimensions and which rows face which Charging Station are not in text.
-- Time limit per run is not in pp.15-20.
-- Surprise Rule content is not described on pp.15-20 (only 50 pts).
-- Starting position rules (Section 2.8), box standard placement (Section 2.7.1), Workbench/Storage Zone geometry, and Charging Station parking criteria are defined outside pp.15-20.
-- Rack levels are not detailed here other than "middle level".
-- Whether Mission 1 box orientation is specified beyond "correct orientation" (p.15) is not stated.
+- Surprise Rule content is not defined in the Game Rules PDF (only 50 pts, p.16, p.20); announced by organisers per General Rules p.14-15.
 - Secret Mission contents not on pp.15-20.
+- Mission 1 box orientation: only "correct orientation" and standard placement (upright, open side up, Section 2.7.1, p.11) are stated; nothing finer.
 - Mission 2: card placement order in Areas 1-5 is by draw order, but whether the order matters for scoring is not stated.
