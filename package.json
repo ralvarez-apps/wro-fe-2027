@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsc --noEmit && vite build && node scripts/postbuild.mjs",
-    "preview": "vite preview --outDir dist",
+    "preview": "vite preview --base /fe/2027/ --outDir dist/fe/2027",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "lint": "tsc --noEmit",

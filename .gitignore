@@ -7,3 +7,6 @@ dist/
 .env
 wrangler.deploy.jsonc
 .wrangler/
+
+# Official WRO rulebooks are copyrighted by the WRO Association: keep local, never commit
+WRO-*.pdf

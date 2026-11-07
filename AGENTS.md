@@ -1,6 +1,6 @@
 # wro-fe-2027 — agent guide
 
-Working repo for the WRO 2027 Future Engineers challenge. Source of truth is the two rulebook PDFs in the repo root. Goal: a Three.js app that visualises the challenge (field, objects, constraints) and what the robot should do in each scenario, with the rule limits made visible. Not in scope: robot firmware, hardware design.
+Working repo for the WRO 2027 Future Engineers challenge. Source of truth is the two rulebook PDFs, kept locally in the repo root and gitignored (copyrighted by the WRO Association; never commit them). Goal: a Three.js app that visualises the challenge (field, objects, constraints) and what the robot should do in each scenario, with the rule limits made visible. Not in scope: robot firmware, hardware design.
 
 ## Commands
 
@@ -13,8 +13,8 @@ Working repo for the WRO 2027 Future Engineers challenge. Source of truth is the
 
 ## Layout
 
-- `WRO-2027-Future-Engineers-Game-Rules.pdf`: game rules (13 MB, read by page range, never whole).
-- `WRO-2027-Future-Engineers-General-Rules.pdf`: general rules.
+- `WRO-2027-Future-Engineers-Game-Rules.pdf`: game rules (13 MB, read by page range, never whole). Local only, gitignored.
+- `WRO-2027-Future-Engineers-General-Rules.pdf`: general rules. Local only, gitignored.
 - `docs/`: docs-architect tree; `docs/guides/rules-*.md` are the cited rules digests, `docs/adr/` decisions, `docs/backlog/` queue.
 - `src/rules/`: field geometry, limits, scoring as typed data, each with a PDF-page `Cite` (kinds: text, figure, derived, assumed).
 - `src/scenarios/`: declarative `ScenarioSetup` → `buildPlan` (waypoint graph + Dijkstra) → `stateAt(plan, t)`. Pure TS, no React/Three.
