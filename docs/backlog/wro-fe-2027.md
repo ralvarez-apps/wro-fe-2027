@@ -3,8 +3,6 @@
 ## Doing
 
 ## Next
-- [ ] Extract both rulebook PDFs to text files (use `pdf` skill; read by page range)  #wro-fe-2027  P1
-  plan: [plan](../plans/2026-11-07-threejs-visualiser.md)
 - [ ] Write the cited rules digest: field, objects, scoring, limits, scenarios, open questions  #wro-fe-2027  P1
   plan: [plan](../plans/2026-11-07-threejs-visualiser.md)
 - [ ] ADR: app stack (plain Three.js vs react-three-fiber, Vite, TS)  #wro-fe-2027  P1

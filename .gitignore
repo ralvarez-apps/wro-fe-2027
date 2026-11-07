@@ -1,2 +1,4 @@
 # rsk skill symlinks (re-created by `rsk install`)
 .claude/skills/
+# local extraction cache
+.cache/
